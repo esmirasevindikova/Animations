@@ -1,0 +1,38 @@
+.border{
+	width: 99%;
+	height:640px;
+	display: flex;
+	align-items: center;
+	position: relative;
+	background-color: #208f89;
+}
+.class{
+	width: 270px;
+	height: 12px;
+	background-color: #208f89;
+	border: 12px solid #f87a1a;
+	border-radius: 20px;
+	position: absolute;
+	transform: translateX(500px);
+}
+.class1{
+	width: 270px;
+	height: 12px;
+	background-color: white;
+	position: absolute;
+	border-radius: 10px;
+	animation-name: class1;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	transform: translateX(513px);
+}
+
+
+@keyframes class1{
+	0%{
+		width: 0;
+	}
+	100%{
+		width: 270px;
+	}
+}

@@ -1,0 +1,60 @@
+.circle{
+	width: 99%;
+	height:640px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #2a3455;
+	animation-duration: 4s;
+	animation-name: circle;
+	animation-iteration-count: infinite;
+}
+.sun{
+	width: 300px;
+	height: 300px;
+	background-color: #e6b808;
+	border-radius: 50%;
+	transform: translateX(120px);
+}
+.moon{
+	width: 285px;
+	height: 285px;
+	background-color: #2a3455;
+	border-radius: 50%;
+	transform: translateX(150px);
+	animation-name: moon;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes moon{
+	0%{
+		background-color: #318ec3;
+		animation-duration: 6s;
+		transform: translateX(150px);
+	}
+	40%,60%{
+		background-color:#2a3455 ;
+		animation-duration: 4s;
+		transform: translateX(-173px);
+	}
+	100%{
+		background-color: #318ec3;
+		animation-duration: 6s;
+		transform: translateX(-500px);
+	}
+}
+@keyframes circle{
+	0%{
+		background-color: #318ec3;
+
+	}
+	40%,60%{
+		background-color:#2a3455 ;
+
+	}
+	100%{
+		background-color: #318ec3;
+
+	}
+}

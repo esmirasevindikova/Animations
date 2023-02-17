@@ -1,0 +1,80 @@
+.plane{
+	width: 99%;
+	height:640px;
+	display: flex;
+	align-items: center;
+	position: relative;
+	background-color: #dce3ef;
+	justify-content: center;
+}
+.back{
+	width: 140px;
+	height: 140px;
+	border-radius: 50%;
+	background-color: #4581e6;
+	overflow: hidden;
+	animation-name: back;
+	animation-duration: 2s;
+	position: absolute;
+	animation-delay: 2s;
+	
+}
+.back i:nth-child(1){
+	font-size: 35px;
+	color: white;
+	transform: translateY(50px) translateX(-50px);
+	animation-name: first-i;
+	animation-duration: 3s ;
+	
+	position: absolute;
+}
+.back i:nth-child(2){
+	font-size: 20px;
+	color: #2f3a6c;
+	transform: translateY(50px) translateX(-70px);
+	animation-duration: 2s;
+	animation-name: second-i;
+	animation-delay: 2.5s;
+	position: absolute;
+	
+}
+
+@keyframes first-i{
+	0%{
+		transform: translateY(50px) translateX(-50px);
+	}
+	40%,70%{
+		transform: translateY(50px) translateX(50px)
+	}
+	100%{
+		transform: translateY(50px) translateX(140px);
+	}
+}
+
+
+
+
+@keyframes second-i{
+	0%{
+		transform: translateY(50px) translateX(-70px);
+	}
+	
+	100%{
+		transform: translateY(50px) translateX(150px);
+	}
+
+}
+@keyframes back{
+	0%{
+		 
+		transform: scale(1.0);
+	}
+	50%{
+		
+		transform: scale(1.1);
+	}
+	100%{
+		
+		transform: scale(0.9);
+	}
+}

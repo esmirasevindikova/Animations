@@ -1,0 +1,114 @@
+.border{
+	width: 99% ;
+	height: 640px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+.border1{
+	width: 340px;
+	height: 470px;
+	border: 2px solid #3d3dc2;
+	background-color: white;
+	border-radius: 15px;
+	z-index: 10;
+	display: flex;
+	flex-direction: column ;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+
+}
+
+.xett{
+	width: 290px;
+	height: 3px;
+	background-color: #3d3dc2;
+	position: absolute;
+	left: 20px;
+	animation-name: xett;
+	animation-duration: 0.5s;
+	/*animation-iteration-count: infinite;*/
+}
+.yuxari{
+	width: 75%;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	transform: translateY(-10px);
+	
+
+}
+.sutun{
+	width: 33px;
+	transform-origin: bottom;
+   	animation-name: sutun;
+   	animation-duration: 0.5s;
+   	animation-delay: 0.5s;
+   	opacity: 0;
+   	animation-fill-mode: forwards;
+
+
+}
+.sutun1{
+	background-color: #a9e6e6;
+	height: 62px;
+   	
+}
+.sutun2{
+	
+	height: 92px;
+   	background-color: #a6d7e4;
+
+}
+.sutun3{
+	
+	height: 122px;
+   	background-color:#a0cbd7;
+
+}
+.sutun4{
+
+	height: 152px;
+   	background-color:#afc0d7 ;
+
+}
+.sutun5{
+
+	height: 182px;
+   	background-color: #98aacf;
+
+}
+ 
+@keyframes xett{
+	0%{
+		left: 20px;
+		width: 0;
+
+	}
+	100%{
+		left:20px;
+		width: 290px;
+	}
+}
+@keyframes sutun{
+	0%{
+		transform: translateY(-10px);
+		transform: scaleY(0);
+		opacity: 1;
+	}
+	100%{
+		transform: scaleY(1.0);
+		opacity: 1;
+	}
+}
+@keyframes yuxari{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+

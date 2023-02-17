@@ -1,0 +1,33 @@
+.red{
+	width: 99%;
+	height: 640px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #f84646;
+	overflow: hidden;
+}
+.class{
+	width: 600px;
+	height: 60px;
+	background-color: white;
+	border-radius: 50px;
+	display: flex;
+	justify-content: center ;
+	align-items: center;
+	margin-bottom: 45px;
+	transform: translateX(-850px);
+	transition: 1s;
+/*	animation-name: class;
+	animation-duration: 2s ;
+	animation-direction: alternate;*/
+}
+.class:hover{
+	transform: translateX(-430px);
+	border-radius: 0;
+}
+.class b{
+	color: #36325a;
+	font-size: 25px
+}
